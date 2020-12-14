@@ -1,0 +1,83 @@
+{
+  "name": "boilerplate",
+  "version": "0.1.0",
+  "author": {
+    "name": "beka kokhodze",
+    "email": "beqa31198@gmail.com"
+  },
+  "private": true,
+  "dependencies": {
+    "@hookform/resolvers": "^1.0.1",
+    "@sentry/react": "^5.27.6",
+    "@sentry/tracing": "^5.27.6",
+    "@testing-library/jest-dom": "^5.11.6",
+    "@testing-library/react": "^11.2.2",
+    "@testing-library/user-event": "^12.2.2",
+    "@types/jest": "^26.0.15",
+    "@types/node": "^14.14.9",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@types/react-helmet": "^6.1.0",
+    "@types/react-router-dom": "^5.1.6",
+    "@types/styled-components": "^5.1.4",
+    "@types/yup": "^0.29.9",
+    "add": "^2.0.6",
+    "ahooks": "^2.9.1",
+    "antd": "^4.8.5",
+    "axios": "^0.21.0",
+    "customize-cra": "^1.0.0",
+    "i18next": "^19.8.4",
+    "i18next-browser-languagedetector": "^6.0.1",
+    "local-storage": "^2.0.0",
+    "moment": "^2.29.1",
+    "query-string": "^6.13.7",
+    "react": "^17.0.1",
+    "react-app-rewired": "^2.1.6",
+    "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0",
+    "react-hook-form": "^6.11.5",
+    "react-i18next": "^11.7.3",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.1",
+    "source-map-explorer": "^2.5.0",
+    "styled-components": "^5.2.1",
+    "swr": "^0.3.9",
+    "typescript": "~4.0.3",
+    "use-query-params": "^1.1.9",
+    "yarn": "^1.22.10",
+    "yup": "^0.31.0"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-app-rewired eject",
+    "analyze": "source-map-explorer 'build/static/js/*.js'"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-styled-components": "^1.12.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "prettier": "^2.2.0"
+  }
+}
