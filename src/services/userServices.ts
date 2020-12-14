@@ -1,6 +1,4 @@
 import ajax from './ajax';
-import endpoints from './endpoints';
-import useRequest from './useRequest';
 
 type RegisterPropsType = {
   first_name: string;
@@ -26,10 +24,3 @@ export const deleteUser = (companySlug: string, userId: number) =>
   ajax.post<AddUserResponseObjectType>(
     `api/v1/companies/${companySlug}/users/${userId}`,
   );
-
-export const useGetDeletedUsers = () =>
-  //TODO: needs good endpoint and type
-  useRequest<any>(endpoints.getDeletedUsers, {
-    refreshInterval: 0,
-    revalidateOnFocus: false,
-  });

@@ -37,7 +37,7 @@ export const appReducer = (
   }
 };
 
-type AppActionsType = {
+export type AppActionsType = {
   setApplicationReady: (
     data: AppReadyType,
   ) => { type: AppTypesEnum.ApplicationReady; payload: AppReadyType };
@@ -45,7 +45,7 @@ type AppActionsType = {
     data: UserObjectType,
   ) => { type: AppTypesEnum.SetUser; payload: UserObjectType };
   toggleUserLoginStatus: (
-    status: boolean,
+    payload: boolean,
   ) => { type: AppTypesEnum.ToggleUserLoginStatus; payload: boolean };
 };
 

@@ -1,11 +1,11 @@
-import { useContext, useEffect, useState } from 'react';
+import { useContext, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import * as Yup from 'yup';
 import { yupResolver } from '@hookform/resolvers/yup';
 
 import { AppContext } from 'state/appContext';
 import { appActions } from 'state/appReducer';
-import { register, useGetCountries } from 'services';
+import { register } from 'services';
 import {
   saveJWTInLocalStorage,
   setAjaxHeader,

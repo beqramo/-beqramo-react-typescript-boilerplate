@@ -5,16 +5,16 @@ import { themePrimary } from 'utils';
 type TitlePropsType = {
   fontSize?: number;
   color?: string;
-  theme: typeof themePrimary;
+  theme?: typeof themePrimary;
+  // theme?: any;
   fontFamily?: string;
 };
 
-const baseStyles = ({
-  fontSize,
-  color,
-  theme: { fontFamilies, colors },
-  fontFamily,
-}: TitlePropsType) => {
+const baseStyles = ({ fontSize, color, theme, fontFamily }: TitlePropsType) => {
+  if (!theme) return;
+
+  const { fontFamilies, colors } = theme;
+
   let fontWeight = 'bold';
   if (fontFamily === fontFamilies.regular) {
     fontWeight = '600';
@@ -40,7 +40,7 @@ const baseStyles = ({
   `;
 };
 
-type StyledHtagType = HTagtype & TitlePropsType;
+interface StyledHtagType extends HTagtype, TitlePropsType {}
 
 export const H1 = React.memo<StyledHtagType>(styled.h1<TitlePropsType>`
   ${(props) => baseStyles(props)}

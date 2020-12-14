@@ -6,15 +6,3 @@ export const useGetCountries = () =>
     refreshInterval: 0,
     revalidateOnFocus: false,
   });
-
-export const useSiderTree = () =>
-  useRequest<SiderTreeBeardResponseType>(endpoints.siderTree, {
-    refreshInterval: 0,
-    revalidateOnFocus: false,
-  });
-
-export const useGetRoles = () =>
-  useRequest<UserRolesResponseType>(endpoints.getRoles, {
-    refreshInterval: 0,
-    revalidateOnFocus: false,
-  });

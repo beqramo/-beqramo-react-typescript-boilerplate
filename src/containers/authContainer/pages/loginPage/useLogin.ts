@@ -44,7 +44,7 @@ const useRegistration = () => {
         setValue('email', state.user?.email ?? '', { shouldValidate: true });
       }
     }
-  }, [state.user, useNewUser]);
+  }, [setValue, state.user, useNewUser]);
 
   useEffect(() => {
     console.log(errors, 'errors');
